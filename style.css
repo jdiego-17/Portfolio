@@ -1,0 +1,234 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: monospace;
+}
+
+header {
+    position: relative;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    background-color: gray;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.navlist {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.navlist a {
+    font-size: 17px;
+    margin: 0 25px;
+    font-weight: 500;
+    transition: all .40s ease;
+}
+/* About Me Section CSS  */
+#about-me {
+    background-color:bisque;
+    background-image: linear-gradient(160deg);
+    /* clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%) ; */
+    height: 100%; 
+    border-top: 0;
+    padding-bottom: 0%;
+    display: block;
+    padding: 2rem 0;
+}
+
+.container {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    width: 100%;
+    padding-right: 5%;
+    padding-left: 5%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2.title {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin: 0 0 0rem;
+    text-align: center;
+}
+
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: center;
+    flex-direction: row;
+}
+.about-info {
+    position: relative;
+    text-align: center;
+    width: 500px;
+    height: 100%;
+    padding-top: 10em;
+    padding-bottom: 10em;
+    padding-left: 20px;
+}
+
+.picture-of-me {
+    position: relative;
+    width: 500px;
+    height: 100%;
+    align-items: center;
+}
+.btn {
+    margin: 0;
+    text-decoration: none;
+    padding: 5px 0px;
+    width: 10%;
+    display: inline-block;
+    border-radius: 5px;
+    background: aqua;
+    transition: all .30s ease;
+    text-align: center;
+    
+} 
+.btn:hover{
+    transform: scale(0.8);
+}
+/* Project Section CSS  
+Project 1
+*/
+
+#projects {
+    background-color: aqua;
+    background-image: linear-gradient(160deg);
+    /* clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%) ; */
+    height: 100%; 
+    border-top: 0;
+    padding-bottom: 0%;
+    display: block;
+    padding: 2rem 0;
+}
+
+div .project-container {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: center;
+    flex-direction: column-reverse;
+    
+}
+
+div.p1 {
+    width: 100%;
+    padding-top: 3em;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: space-evenly;
+    flex-direction: row-reverse;
+}
+
+h3 .project-title1 {
+    position: absolute;
+    text-align: center;
+}
+.project-title1{
+    color: black;
+    font-size: 20px;
+    width: 15%;
+    margin-top: 10px;
+}
+
+
+.image1  {
+    width: 100%;
+    height: 400px;
+    background-image: url('accessibility.jpg');
+    background-attachment: fixed;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-origin: border-box;
+}
+
+/*  Project 2 and 3   */
+
+
+h3 .project-title {
+    position: absolute;
+    text-align: center;
+}
+
+div.image2 {
+    background-image: url('comingsoon.jpg');
+    background-attachment: relative;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 300px;
+}
+
+.project-title{
+    color: black;
+    font-size: 20px;
+    width: 15%;
+    margin-top: 10px;
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.project2 {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+
+/* contact Info  */
+.contact-title{
+    width: 50%;
+    text-align: center;
+    font-size: 25px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.contact {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.info {
+    font-size: 20px;
+    margin: 0 25px;
+    font-weight: 500;
+    transition: all .40s ease;
+    width: 50%;
+}
+
+.image1:hover {
+    background-size: 100%;
+}
+
+@media only screen and (min-device-width: 400px) {
+    .image1 {
+      background-image: url('accessibility.jpg');
+      background-position: center;
+    }
+  }
+  @media only screen and (min-device-width: 400px) {
+    .image2 {
+      background-image: url('comingsoon.jpg');
+      background-position: center;
+    }
+  }
+
+
+/* Footer */
+footer {
+    padding: 20px;
+    text-align: center;
+    background: #13293d;
+    color: white;
+}
